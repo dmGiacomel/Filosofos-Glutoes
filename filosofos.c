@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <semaphore.h>
+
+//deve utilizar rand_r para gerar valores aleatorios de modo thread-safe
 
 void pegarGarfo();
 
@@ -18,6 +21,7 @@ void comer(){
 //posicao (n+1)%n_filosofos é o garfo à direita do filósofo n
 //ROTINA DO FILÓSOFO
 void pensarEComer(int *filosofo, int n_filosofos, int *garfos){
+    // trocar pensar por sleep
     pensar();
     comer();
 }
@@ -25,7 +29,11 @@ void pensarEComer(int *filosofo, int n_filosofos, int *garfos){
 int main(int argc, char **argv){
 
     int n_filosofos = atoi(argv[1]);
-    int garfos[n_filosofos];
+    sem_t garfos[n_filosofos];
+    for(int i = 0; i < n_filosofos; i++){
+        // vetor preenchido por semáforos binários (mutex), representando cada garfo
+        sem_init(&garfos[n_filosofos], 0, 1);
+    }
 
     srandom(time(NULL));
 
