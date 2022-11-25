@@ -2,20 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <semaphore.h>
+#include <pthread.h>
 
 //deve utilizar rand_r para gerar valores aleatorios de modo thread-safe
 
 sem_t semaf;
-
-void pegarGarfo(int index){
-    sem_wait(garfos[index]);
-    printf("pegou garfo %d\n", index);
-}
-
-void devolverGarfo(int index){
-    sem_post(garfos[index]);
-    printf("devolveu o garfo %d\n", index);
-}
 
 //simula o filósofo pensando pausando a thread por um tempo randômico
 // trocar função por só sleep(n)
@@ -24,7 +15,7 @@ void devolverGarfo(int index){
 }*/
 
 //o filósofo pega o garfo da esquerda, pega o garfo da direita e come por um tempo
-void comer(int i1, int i2){
+void comer(int i1, int i2, sem_t *garfos[]){
     sem_wait(&semaf);
     // --------------------
         sem_wait(garfos[i1]);
@@ -32,8 +23,8 @@ void comer(int i1, int i2){
     // --------------------
     sem_post(&semaf);
 
-    unsigned int *seed = srandom(time(NULL));
-    int sleep_time = r_rand(seed);
+    unsigned int seed = time(NULL);
+    int sleep_time = r_rand(&seed);
     sleep(sleep_time);
 
     sem_wait(&semaf);
@@ -47,15 +38,17 @@ void comer(int i1, int i2){
 //posicao n do vetor garfos é o garfo à esquerda do filósofo n
 //posicao (n+1)%n_filosofos é o garfo à direita do filósofo n
 //ROTINA DO FILÓSOFO
-void pensarEComer(int *filosofo, int n_filosofos, int *garfos){
+void *pensarEComer(int *filosofo, int n_filosofos, int *garfos){
     // trocar pensar por sleep
     // pensar();
     comer();
 }
 
 int main(int argc, char **argv){
+
     sem_init(&semaf, 0, 1);
     int n_filosofos = atoi(argv[1]);
+    pthread_t t_filosofos[n_filosofos];
 
     if(n_filosofos <= 0){
         printf("Não existo logo não penso >:(");
@@ -72,7 +65,7 @@ int main(int argc, char **argv){
 
     while(1){
         for(int i = 0; i < n_filosofos; i++){
-            pthread_create(&garfos[i], NULL, &pensarEComer, NULL);
+            pthread_create(&t_filosofos[i], NULL, pensarEComer, NULL);
         }
     }
 
