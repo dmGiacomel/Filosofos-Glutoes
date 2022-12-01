@@ -65,6 +65,10 @@ void* pensarEComer(void *infos){
 
 int main(int argc, char **argv){
 
+    if(argv[1] == NULL){
+        printf("Número de filósofos inválido.\n");
+        exit(1);
+    }
     int n_filosofos = atoi(argv[1]);
     pthread_t filosofos[n_filosofos];
     sem_t *garfos;
