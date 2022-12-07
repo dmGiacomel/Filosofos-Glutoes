@@ -1,0 +1,300 @@
+Vezes que o filosofo 0 comeu: 664405
+Vezes que o filosofo 0 pensou: 664405
+
+Vezes que o filosofo 1 comeu: 648273
+Vezes que o filosofo 1 pensou: 648273
+
+Vezes que o filosofo 2 comeu: 651059
+Vezes que o filosofo 2 pensou: 651059
+
+Vezes que o filosofo 3 comeu: 651196
+Vezes que o filosofo 3 pensou: 651196
+
+Vezes que o filosofo 4 comeu: 652551
+Vezes que o filosofo 4 pensou: 652551
+
+Vezes que o filosofo 5 comeu: 668868
+Vezes que o filosofo 5 pensou: 668868
+
+Vezes que o filosofo 6 comeu: 646888
+Vezes que o filosofo 6 pensou: 646888
+
+Vezes que o filosofo 7 comeu: 659103
+Vezes que o filosofo 7 pensou: 659103
+
+Vezes que o filosofo 8 comeu: 647083
+Vezes que o filosofo 8 pensou: 647083
+
+Vezes que o filosofo 9 comeu: 657941
+Vezes que o filosofo 9 pensou: 657941
+
+Vezes que o filosofo 10 comeu: 675270
+Vezes que o filosofo 10 pensou: 675270
+
+Vezes que o filosofo 11 comeu: 656007
+Vezes que o filosofo 11 pensou: 656007
+
+Vezes que o filosofo 12 comeu: 638963
+Vezes que o filosofo 12 pensou: 638963
+
+Vezes que o filosofo 13 comeu: 666945
+Vezes que o filosofo 13 pensou: 666945
+
+Vezes que o filosofo 14 comeu: 650106
+Vezes que o filosofo 14 pensou: 650106
+
+Vezes que o filosofo 15 comeu: 656433
+Vezes que o filosofo 15 pensou: 656433
+
+Vezes que o filosofo 16 comeu: 652027
+Vezes que o filosofo 16 pensou: 652027
+
+Vezes que o filosofo 17 comeu: 657624
+Vezes que o filosofo 17 pensou: 657624
+
+Vezes que o filosofo 18 comeu: 648303
+Vezes que o filosofo 18 pensou: 648303
+
+Vezes que o filosofo 19 comeu: 654410
+Vezes que o filosofo 19 pensou: 654410
+
+Vezes que o filosofo 20 comeu: 640563
+Vezes que o filosofo 20 pensou: 640563
+
+Vezes que o filosofo 21 comeu: 652949
+Vezes que o filosofo 21 pensou: 652949
+
+Vezes que o filosofo 22 comeu: 649006
+Vezes que o filosofo 22 pensou: 649006
+
+Vezes que o filosofo 23 comeu: 655296
+Vezes que o filosofo 23 pensou: 655296
+
+Vezes que o filosofo 24 comeu: 642654
+Vezes que o filosofo 24 pensou: 642654
+
+Vezes que o filosofo 25 comeu: 656246
+Vezes que o filosofo 25 pensou: 656246
+
+Vezes que o filosofo 26 comeu: 645082
+Vezes que o filosofo 26 pensou: 645082
+
+Vezes que o filosofo 27 comeu: 640863
+Vezes que o filosofo 27 pensou: 640863
+
+Vezes que o filosofo 28 comeu: 635701
+Vezes que o filosofo 28 pensou: 635701
+
+Vezes que o filosofo 29 comeu: 653014
+Vezes que o filosofo 29 pensou: 653014
+
+Vezes que o filosofo 30 comeu: 640934
+Vezes que o filosofo 30 pensou: 640934
+
+Vezes que o filosofo 31 comeu: 652356
+Vezes que o filosofo 31 pensou: 652356
+
+Vezes que o filosofo 32 comeu: 646245
+Vezes que o filosofo 32 pensou: 646245
+
+Vezes que o filosofo 33 comeu: 651489
+Vezes que o filosofo 33 pensou: 651489
+
+Vezes que o filosofo 34 comeu: 645109
+Vezes que o filosofo 34 pensou: 645109
+
+Vezes que o filosofo 35 comeu: 645639
+Vezes que o filosofo 35 pensou: 645639
+
+Vezes que o filosofo 36 comeu: 649704
+Vezes que o filosofo 36 pensou: 649704
+
+Vezes que o filosofo 37 comeu: 664177
+Vezes que o filosofo 37 pensou: 664177
+
+Vezes que o filosofo 38 comeu: 650604
+Vezes que o filosofo 38 pensou: 650604
+
+Vezes que o filosofo 39 comeu: 654928
+Vezes que o filosofo 39 pensou: 654928
+
+Vezes que o filosofo 40 comeu: 662457
+Vezes que o filosofo 40 pensou: 662457
+
+Vezes que o filosofo 41 comeu: 672776
+Vezes que o filosofo 41 pensou: 672776
+
+Vezes que o filosofo 42 comeu: 671953
+Vezes que o filosofo 42 pensou: 671953
+
+Vezes que o filosofo 43 comeu: 663174
+Vezes que o filosofo 43 pensou: 663174
+
+Vezes que o filosofo 44 comeu: 656227
+Vezes que o filosofo 44 pensou: 656227
+
+Vezes que o filosofo 45 comeu: 648369
+Vezes que o filosofo 45 pensou: 648369
+
+Vezes que o filosofo 46 comeu: 671767
+Vezes que o filosofo 46 pensou: 671767
+
+Vezes que o filosofo 47 comeu: 665333
+Vezes que o filosofo 47 pensou: 665333
+
+Vezes que o filosofo 48 comeu: 654534
+Vezes que o filosofo 48 pensou: 654534
+
+Vezes que o filosofo 49 comeu: 654595
+Vezes que o filosofo 49 pensou: 654595
+
+Vezes que o filosofo 50 comeu: 653960
+Vezes que o filosofo 50 pensou: 653960
+
+Vezes que o filosofo 51 comeu: 676407
+Vezes que o filosofo 51 pensou: 676407
+
+Vezes que o filosofo 52 comeu: 648998
+Vezes que o filosofo 52 pensou: 648998
+
+Vezes que o filosofo 53 comeu: 667495
+Vezes que o filosofo 53 pensou: 667495
+
+Vezes que o filosofo 54 comeu: 654547
+Vezes que o filosofo 54 pensou: 654547
+
+Vezes que o filosofo 55 comeu: 668402
+Vezes que o filosofo 55 pensou: 668402
+
+Vezes que o filosofo 56 comeu: 654880
+Vezes que o filosofo 56 pensou: 654880
+
+Vezes que o filosofo 57 comeu: 662011
+Vezes que o filosofo 57 pensou: 662011
+
+Vezes que o filosofo 58 comeu: 647915
+Vezes que o filosofo 58 pensou: 647915
+
+Vezes que o filosofo 59 comeu: 653763
+Vezes que o filosofo 59 pensou: 653763
+
+Vezes que o filosofo 60 comeu: 653801
+Vezes que o filosofo 60 pensou: 653801
+
+Vezes que o filosofo 61 comeu: 651091
+Vezes que o filosofo 61 pensou: 651091
+
+Vezes que o filosofo 62 comeu: 655710
+Vezes que o filosofo 62 pensou: 655710
+
+Vezes que o filosofo 63 comeu: 657702
+Vezes que o filosofo 63 pensou: 657702
+
+Vezes que o filosofo 64 comeu: 643222
+Vezes que o filosofo 64 pensou: 643222
+
+Vezes que o filosofo 65 comeu: 642632
+Vezes que o filosofo 65 pensou: 642632
+
+Vezes que o filosofo 66 comeu: 654739
+Vezes que o filosofo 66 pensou: 654739
+
+Vezes que o filosofo 67 comeu: 652146
+Vezes que o filosofo 67 pensou: 652146
+
+Vezes que o filosofo 68 comeu: 655056
+Vezes que o filosofo 68 pensou: 655056
+
+Vezes que o filosofo 69 comeu: 649163
+Vezes que o filosofo 69 pensou: 649163
+
+Vezes que o filosofo 70 comeu: 654918
+Vezes que o filosofo 70 pensou: 654918
+
+Vezes que o filosofo 71 comeu: 656568
+Vezes que o filosofo 71 pensou: 656568
+
+Vezes que o filosofo 72 comeu: 666596
+Vezes que o filosofo 72 pensou: 666596
+
+Vezes que o filosofo 73 comeu: 659635
+Vezes que o filosofo 73 pensou: 659635
+
+Vezes que o filosofo 74 comeu: 661526
+Vezes que o filosofo 74 pensou: 661526
+
+Vezes que o filosofo 75 comeu: 670586
+Vezes que o filosofo 75 pensou: 670586
+
+Vezes que o filosofo 76 comeu: 645457
+Vezes que o filosofo 76 pensou: 645457
+
+Vezes que o filosofo 77 comeu: 648473
+Vezes que o filosofo 77 pensou: 648473
+
+Vezes que o filosofo 78 comeu: 655996
+Vezes que o filosofo 78 pensou: 655996
+
+Vezes que o filosofo 79 comeu: 652106
+Vezes que o filosofo 79 pensou: 652106
+
+Vezes que o filosofo 80 comeu: 648877
+Vezes que o filosofo 80 pensou: 648877
+
+Vezes que o filosofo 81 comeu: 654105
+Vezes que o filosofo 81 pensou: 654105
+
+Vezes que o filosofo 82 comeu: 658696
+Vezes que o filosofo 82 pensou: 658696
+
+Vezes que o filosofo 83 comeu: 652094
+Vezes que o filosofo 83 pensou: 652094
+
+Vezes que o filosofo 84 comeu: 641664
+Vezes que o filosofo 84 pensou: 641664
+
+Vezes que o filosofo 85 comeu: 650181
+Vezes que o filosofo 85 pensou: 650181
+
+Vezes que o filosofo 86 comeu: 653870
+Vezes que o filosofo 86 pensou: 653870
+
+Vezes que o filosofo 87 comeu: 658193
+Vezes que o filosofo 87 pensou: 658193
+
+Vezes que o filosofo 88 comeu: 651824
+Vezes que o filosofo 88 pensou: 651824
+
+Vezes que o filosofo 89 comeu: 654125
+Vezes que o filosofo 89 pensou: 654125
+
+Vezes que o filosofo 90 comeu: 657846
+Vezes que o filosofo 90 pensou: 657846
+
+Vezes que o filosofo 91 comeu: 660095
+Vezes que o filosofo 91 pensou: 660095
+
+Vezes que o filosofo 92 comeu: 651097
+Vezes que o filosofo 92 pensou: 651097
+
+Vezes que o filosofo 93 comeu: 646397
+Vezes que o filosofo 93 pensou: 646397
+
+Vezes que o filosofo 94 comeu: 655510
+Vezes que o filosofo 94 pensou: 655510
+
+Vezes que o filosofo 95 comeu: 663682
+Vezes que o filosofo 95 pensou: 663682
+
+Vezes que o filosofo 96 comeu: 642016
+Vezes que o filosofo 96 pensou: 642016
+
+Vezes que o filosofo 97 comeu: 637009
+Vezes que o filosofo 97 pensou: 637009
+
+Vezes que o filosofo 98 comeu: 626402
+Vezes que o filosofo 98 pensou: 626402
+
+Vezes que o filosofo 99 comeu: 651573
+Vezes que o filosofo 99 pensou: 651573
+
