@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <semaphore.h>
 
+volatile int *vezes_comido, *vezes_pensado; 
+
 //argumento para a função das threads
 typedef struct infos_filosofo {
     int indice_filosofo;
@@ -13,11 +15,12 @@ typedef struct infos_filosofo {
     sem_t *semaforos;
     sem_t *controle_dos_garfo_pegar;
     sem_t *controle_dos_garfo_devolver;
+    int timeout;
 } infos_filosofo;
 
 //simula o filósofo pensando pausando a thread por um tempo randômico
 void pensar(int filosofo){
-    printf("Tô pensando... - filósofo %d\n", filosofo);
+    //printf("Tô pensando... - filósofo %d\n", filosofo);
     //usleep(300 * filosofo);
 }
 
@@ -32,7 +35,7 @@ void comer(int filosofo, sem_t *controle_dos_garfo_pegar, sem_t *controle_dos_ga
         sem_wait(garfo_direita);
     sem_post(controle_dos_garfo_pegar);
 
-    printf("- Tô comendo... - filósofo %d\n", filosofo);
+    //printf("- Tô comendo... - filósofo %d\n", filosofo);
     //usleep(300 * filosofo);
 
     //SEÇÃO CRÍTICA - devolver os dois garfos deve ser atômico, para evitar deadlocks
@@ -50,16 +53,21 @@ void comer(int filosofo, sem_t *controle_dos_garfo_pegar, sem_t *controle_dos_ga
 //recebe como parâmetro o número do filósofo e a referência pros mutex dos garfos
 void* pensarEComer(void *infos){
 
+    int timeout = ((infos_filosofo*)infos)->timeout;
     int filosofo = ((infos_filosofo*)infos)->indice_filosofo;
     int n_filosofos = ((infos_filosofo*)infos)->n_filosofos;
     sem_t *garfos = ((infos_filosofo*)infos)->semaforos;
     sem_t *controle_dos_garfo_pegar = ((infos_filosofo*)infos)->controle_dos_garfo_pegar;
     sem_t *controle_dos_garfo_devolver = ((infos_filosofo*)infos)->controle_dos_garfo_devolver;
 
-    for(int i = 0; i > -1;){
-        printf("---------------- ITERAÇÃO %d DO FILÓSOFO %d----------------------\n", i, filosofo);
+    time_t start = time(NULL);
+
+    while((int)(time(NULL) - start) < timeout){
+        //printf("---------------- ITERAÇÃO %d DO FILÓSOFO %d----------------------\n", i, filosofo);
         pensar(filosofo);
-        comer(filosofo, controle_dos_garfo_pegar, controle_dos_garfo_devolver, &garfos[i], &garfos[(i + 1) % n_filosofos]);
+        vezes_pensado[filosofo]++;
+        comer(filosofo, controle_dos_garfo_pegar, controle_dos_garfo_devolver, &garfos[filosofo], &garfos[(filosofo + 1) % n_filosofos]);
+        vezes_comido[filosofo]++;
     }
 }
 
@@ -69,7 +77,12 @@ int main(int argc, char **argv){
         printf("Número de filósofos inválido.\n");
         exit(1);
     }
+
     int n_filosofos = atoi(argv[1]);
+    int timeout = atoi(argv[2]);
+    vezes_comido = (int*)calloc(sizeof(int), n_filosofos);
+    vezes_pensado = (int*)calloc(sizeof(int), n_filosofos);
+
     pthread_t filosofos[n_filosofos];
     sem_t *garfos;
     sem_t *controle_dos_garfo_pegar, *controle_dos_garfo_devolver;
@@ -93,7 +106,7 @@ int main(int argc, char **argv){
     //starta as threads passando o índice do filósofo, número de filósofos, 
     //vetor de semáforos e o mutex que controla o pegar e largar dos garfos
     for (int i = 0; i < n_filosofos; i++){
-        infos[i] = (infos_filosofo){i, n_filosofos, garfos, controle_dos_garfo_pegar, controle_dos_garfo_devolver};
+        infos[i] = (infos_filosofo){i, n_filosofos, garfos, controle_dos_garfo_pegar, controle_dos_garfo_devolver, timeout};
         pthread_create(&filosofos[i], NULL, &pensarEComer, (void *)&infos[i]);
     }
 
@@ -107,6 +120,12 @@ int main(int argc, char **argv){
     //destrói os semáforos de controle dos garfos
     sem_destroy(controle_dos_garfo_pegar);
     sem_destroy(controle_dos_garfo_devolver);
+
+    for(int i = 0; i < n_filosofos; i++){
+        printf("Vezes que o filosofo %d comeu: %d\n", i, vezes_comido[i]);
+        printf("Vezes que o filosofo %d pensou: %d\n", i, vezes_pensado[i]);
+        printf("\n");
+    }
 
     return 0;
 }
