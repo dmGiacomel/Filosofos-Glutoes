@@ -20,8 +20,13 @@ typedef struct infos_filosofo {
 
 //simula o filósofo pensando pausando a thread por um tempo randômico
 void pensar(int filosofo){
-    //printf("Tô pensando... - filósofo %d\n", filosofo);
+    printf("Tô pensando... - filósofo %d\n", filosofo);
     //usleep(300 * filosofo);
+    unsigned int seed = time(NULL);
+    //int random = rand_r(&seed)/(RAND_MAX/(251)+1);
+    int random = rand_r(&seed) % (filosofo + 10);
+    printf("random = %d\n", random);
+    usleep(random);
 }
 
 //posicao n do vetor garfos é o garfo à esquerda do filósofo n
@@ -35,8 +40,13 @@ void comer(int filosofo, sem_t *controle_dos_garfo_pegar, sem_t *controle_dos_ga
         sem_wait(garfo_direita);
     sem_post(controle_dos_garfo_pegar);
 
-    //printf("- Tô comendo... - filósofo %d\n", filosofo);
+    printf("- Tô comendo... - filósofo %d\n", filosofo);
     //usleep(300 * filosofo);
+    unsigned int seed = time(NULL);
+    //int random = rand_r(&seed)/(RAND_MAX/(251)+1);
+    int random= rand_r(&seed) % (filosofo + 10);
+    printf("random = %d\n", random);
+    usleep(random);
 
     //SEÇÃO CRÍTICA - devolver os dois garfos deve ser atômico, para evitar deadlocks
     sem_wait(controle_dos_garfo_devolver);
